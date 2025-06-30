@@ -203,6 +203,16 @@ $(document).ready(function () {
     }, 500, 'linear');
   });
   
+$(window).on("load", function () {
+  setTimeout(function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, 50); 
+});
+
+  
   
   
 });
