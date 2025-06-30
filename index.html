@@ -28,6 +28,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollTrigger/1.0.6/ScrollTrigger.min.js"></script>
@@ -37,9 +38,16 @@
     <!-- Navigation -->
     <nav class="fixed w-full bg-white shadow-md z-50">
       <div
-        class="bg-white max-w-7xl mx-auto px-6 py-4 flex justify-between i tems-center relative z-50"
+        class="bg-white max-w-7xl mx-auto px-6 py-4 flex justify-between 
+        items-center relative z-50
+        
+        "
       >
-        <a href="#" class="text-2xl font-bold text-gray-800">
+        <a href="#" class="text-2xl font-bold text-gray-800
+        wow animate__animated animate__lightSpeedInLeft
+        "
+        data-wow-duration="1s" data-wow-delay="0.3s" 
+        >
           <img class="h-10" src="./images/logo.png" alt="" />
         </a>
 
@@ -50,7 +58,14 @@
 
         <div
           id="nav-menu"
-          class="md:flex space-x-8 absolute md:static flex flex-col md:flex-row bg-white overflow-hidden w-[0%] md:w-auto h-screen md:h-auto left-0 gap-2 md:gap-0 py-4 md:py-0 top-[4.5rem] shadow-lg md:shadow-none transition-all duration-300"
+          class="md:flex space-x-8 absolute md:static flex flex-col md:flex-row bg-white 
+          overflow-hidden w-[0%] md:w-auto h-screen md:h-auto left-0 
+          gap-2 md:gap-0 py-4 md:py-0 top-[4.5rem] shadow-lg md:shadow-none 
+          transition-all duration-300
+          wow animate__animated animate__lightSpeedInRight
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.5s"
         >
           <a
             href="#"
@@ -115,9 +130,17 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero-bg min-h-screen flex items-center justify-center">
+    <section class="hero-bg min-h-screen flex items-center justify-center
+    wow animate__animated animate__lightSpeedInLeft
+    "
+    data-wow-duration="1s"
+    >
       <div
-        class="text-center max-w-4xl px-6 py-20 mt-16 backdrop-blur-sm bg-white/10 rounded-3xl"
+        class="text-center max-w-4xl px-6 py-20 mt-16 backdrop-blur-sm bg-white/10 rounded-3xl
+        wow animate__animated animate__bounceInDown
+        "
+        data-wow-duration="1s"
+        data-wow-delay="0.5s"
       >
         <h1
           class="text-3xl md:text-6xl font-bold text-white leading-tight mb-6 font-['Exo_2']"
@@ -153,7 +176,7 @@
       <div
         class="max-w-6xl mx-auto flex flex-col md:flex-row gap-8 flex-row-reverse"
       >
-        <div class="md:w-1/2 flex gap-4 relative justify-center items-center">
+        <div class="md:w-1/2 flex gap-4 relative justify-center items-center wow animate__animated animate__backInLeft" data-wow-duration="1s">
           <a
             href="#"
             class="absolute top-[5rem] md:top-[10rem] left-[8rem] md:left-[15rem] w-20 h-20 bg-[#47B853] rounded-full text-white border-[8px] border-white z-10 flex items-center justify-center"
@@ -178,7 +201,8 @@
             <img width="45%" src="./images/ab-3.jpg" alt="" />
           </div>
         </div>
-        <div class="md:w-1/2 mt-12 md:mt-0">
+        
+        <div class="md:w-1/2 mt-12 md:mt-0 wow animate__animated animate__backInRight" data-wow-delay="0.5s" data-wow-duration="1s">
           <h2
             class="text-[#0B4520] text-4xl uppercase font-bold mb-2 font-['Exo_2']"
           >
@@ -221,11 +245,18 @@
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
           <h2
-            class="text-4xl font-bold mb-4 text-[#0B4520] uppercase font-['Exo_2']"
+            class="text-4xl font-bold mb-4 text-[#0B4520] uppercase font-['Exo_2']
+            wow animate__animated animate__fadeInUp
+            "
+            data-wow-duration="1s"
           >
             Our Projects
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
+          <p class="text-gray-600 max-w-2xl mx-auto
+          wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          >
             Discover our premium residential projects designed for modern living
             with sustainability at their core.
           </p>
@@ -233,7 +264,13 @@
         <div class="project-slider">
           <div class="px-2">
             <div
-              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 cursor-pointer"
+              class="project-card bg-white rounded-lg shadow-md 
+              overflow-hidden transition duration-300 
+              cursor-pointer
+              wow animate__animated animate__fadeInUp
+              "
+              data-wow-duration="1s"
+              data-wow-delay="0.1s"
             >
               <img
                 src="./images/ab-1.jpeg"
@@ -261,7 +298,12 @@
 
           <div class="px-2">
             <div
-              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 cursor-pointer"
+              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition 
+              duration-300 cursor-pointer
+              wow animate__animated animate__fadeInUp
+              "
+              data-wow-duration="1s"
+              data-wow-delay="0.2s"
             >
               <img
                 src="./images/hero.jpg"
@@ -289,7 +331,12 @@
 
           <div class="px-2">
             <div
-              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 cursor-pointer"
+              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition 
+              duration-300 cursor-pointer
+              wow animate__animated animate__fadeInUp
+              "
+              data-wow-duration="1s"
+              data-wow-delay="0.3s"
             >
               <img
                 src="./images/ab-3.jpg"
@@ -318,7 +365,12 @@
 
           <div class="px-2">
             <div
-              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 cursor-pointer"
+              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition 
+              duration-300 cursor-pointer
+              wow animate__animated animate__fadeInUp
+              "
+              data-wow-duration="1s"
+              data-wow-delay="0.4s"
             >
               <img
                 src="./images/ab-3.jpg"
@@ -349,7 +401,13 @@
         <div class="text-center mt-12">
           <a
             href="#"
-            class="bg-[#0B4520] text-white px-10 py-2.5 rounded-full transition duration-300 hover:bg-white hover:text-[#0B4520] hover:border hover:border-[#0B4520] group uppercase text-sm font-semibold"
+            class="bg-[#0B4520] text-white px-10 py-2.5 rounded-full transition duration-300 
+            hover:bg-white hover:text-[#0B4520] hover:border hover:border-[#0B4520] 
+            group uppercase text-sm font-semibold
+            wow animate__animated animate__fadeInDown
+            "
+            data-wow-duration="1s"
+            data-wow-delay="0.5s"
           >
             Explore Projects
             <i
@@ -365,18 +423,28 @@
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
           <h2
-            class="text-4xl font-bold mb-4 font-['Exo_2'] uppercase text-[#0B4520]"
+            class="text-4xl font-bold mb-4 font-['Exo_2'] uppercase text-[#0B4520]
+            wow animate__animated animate__fadeInUp
+            "
+            data-wow-duration="1s"
           >
             why invest with us
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
+          <p class="text-gray-600 max-w-2xl mx-auto
+          wow animate__animated animate__fadeInUp
+          "data-wow-duration="1s" data-wow-duration="0.2s">
             We go beyond building houses - we create sustainable communities
             with lasting value.
           </p>
         </div>
         <div class="grid md:grid-cols-3 gap-8">
+          
           <div
-            class="bg-white p-8 rounded-lg shadow-md text-center transition duration-300 animation"
+            class="bg-white p-8 rounded-lg shadow-md text-center transition duration-300 animation
+            wow animate__animated animate__bounceInLeft
+            "
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
           >
             <div
               class="bg-[#47b85230] w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"
@@ -403,7 +471,12 @@
             </p>
           </div>
 
-          <div class="bg-white animation p-8 rounded-lg shadow-md text-center">
+          <div class="bg-white animation p-8 rounded-lg shadow-md text-center
+          wow animate__animated animate__bounceInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.3s"
+          >
             <div
               class="bg-[#47b85230] w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"
             >
@@ -429,7 +502,12 @@
             </p>
           </div>
 
-          <div class="bg-white animation p-8 rounded-lg shadow-md text-center">
+          <div class="bg-white animation p-8 rounded-lg shadow-md text-center
+          wow animate__animated animate__bounceInRight
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.3s"
+          >
             <div
               class="bg-[#47b85230] w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"
             >
@@ -454,6 +532,7 @@
               yields.
             </p>
           </div>
+          
         </div>
       </div>
     </section>
@@ -463,11 +542,19 @@
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
           <h2
-            class="text-4xl font-bold mb-4 text-[#0B4520] font-['exo_2'] uppercase"
+            class="text-4xl font-bold mb-4 text-[#0B4520] font-['exo_2'] uppercase
+            wow animate__animated animate__fadeInUp
+            "
+            data-wow-duration="1s"
           >
             what our clients say
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
+          <p class="text-gray-600 max-w-2xl mx-auto
+          wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-duration="0.3s"
+          >
             Hear from homeowners who trusted RC Property for their dream homes.
           </p>
         </div>
@@ -475,7 +562,12 @@
           
           <div class="px-3 py-6">
             <div
-            class="testimonial-card bg-gray-50 p-8 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:transform hover:translate-y-[-10px]"
+            class="testimonial-card bg-gray-50 p-8 rounded-lg cursor-pointer transition-all 
+            duration-300 ease-in-out hover:transform hover:translate-y-[-10px]
+            wow animate__animated animate__fadeInUp
+            "
+            data-wow-duration="1s"
+            data-wow-delay="0.1s"
           >
             <div class="flex items-center mb-6">
               <img
@@ -551,7 +643,12 @@
 
           <div class="p-3 py-6">
             <div
-            class="testimonial-card bg-gray-50 p-8 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:transform hover:translate-y-[-10px]"
+            class="testimonial-card bg-gray-50 p-8 rounded-lg cursor-pointer 
+            transition-all duration-300 ease-in-out hover:transform hover:translate-y-[-10px]
+            wow animate__animated animate__zoomIn
+            "
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
           >
             <div class="flex items-center mb-6">
               <img
@@ -627,7 +724,12 @@
 
           <div class="p-3 py-6">
             <div
-            class="testimonial-card bg-gray-50 p-8 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:transform hover:translate-y-[-10px]"
+            class="testimonial-card bg-gray-50 p-8 rounded-lg cursor-pointer transition-all 
+            duration-300 ease-in-out hover:transform hover:translate-y-[-10px]
+            wow animate__animated animate__fadeInUp
+            "
+            data-wow-delay="0.2s"
+            data-wow-duration="1s"
           >
             <div class="flex items-center mb-6">
               <img
@@ -703,7 +805,12 @@
 
           <div class="p-3 py-6">
             <div
-            class="testimonial-card bg-gray-50 p-8 rounded-lg cursor-pointer transition-all duration-300 ease-in-out hover:transform hover:translate-y-[-10px]"
+            class="testimonial-card bg-gray-50 p-8 rounded-lg cursor-pointer transition-all 
+            duration-300 ease-in-out hover:transform hover:translate-y-[-10px]
+            wow animate__animated animate__fadeInUp
+            "
+            data-wow-duration="1s"
+            data-wow-delay="0.3s"
           >
             <div class="flex items-center mb-6">
               <img
@@ -789,11 +896,19 @@
       <div class="max-w-6xl mx-auto">
         <div class="text-center mb-16">
           <h2
-            class="text-4xl font-bold mb-4 text-[#0B4520] uppercase font-['Exo_2']"
+            class="text-4xl font-bold mb-4 text-[#0B4520] uppercase font-['Exo_2']
+            wow animate__animated animate__fadeInUp
+            "
+            data-wow-duration="1s"
           >
             latest news & updates
           </h2>
-          <p class="text-gray-600 max-w-2xl mx-auto">
+          <p class="text-gray-600 max-w-2xl mx-auto
+          wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-duration="0.3s"
+          >
             Stay up-to-date with the latest news and updates from our
             residential projects.
           </p>
@@ -802,7 +917,12 @@
         <div class="news-slider">
           <div class="px-2">
             <div
-              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 cursor-pointer group"
+              class="project-card bg-white rounded-lg shadow-md overflow-hidden 
+              transition duration-300 cursor-pointer group
+              wow animate__animated animate__fadeInDown
+              "
+              data-wow-duration="1s"
+              data-wow-delay="0.1s"
             >
               <img
                 src="./images/news/news-1.jpg"
@@ -832,7 +952,14 @@
 
           <div class="px-2">
             <div
-              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 cursor-pointer group"
+              class="project-card bg-white rounded-lg 
+              shadow-md overflow-hidden transition duration-300 
+              cursor-pointer group
+              wow animate__animated animate__fadeInDown
+              "
+              data-wow-duration="1s"
+              data-wow-delay="0.2s
+              "
             >
               <img
                 src="./images/news/news-2.webp"
@@ -862,7 +989,13 @@
 
           <div class="px-2">
             <div
-              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 cursor-pointer group"
+              class="project-card bg-white rounded-lg shadow-md overflow-hidden 
+              transition duration-300 cursor-pointer group
+              wow animate__animated animate__zoomIn
+              "
+              data-wow-duration="1s"
+              data-wow-delay="0.3s
+              "
             >
               <img
                 src="./images/news/news-3.png"
@@ -892,7 +1025,13 @@
 
           <div class="px-2">
             <div
-              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition duration-300 cursor-pointer group"
+              class="project-card bg-white rounded-lg shadow-md overflow-hidden transition 
+              duration-300 cursor-pointer group
+              wow animate__animated animate__fadeInUp
+              "
+              data-wow-duration="1s"
+              data-wow-delay="0.4s
+              "
             >
               <img
                 src="./images/news/news-4.jpg"
@@ -924,7 +1063,13 @@
         <div class="text-center mt-12">
           <a
             href="#"
-            class="bg-[#0B4520] text-white px-10 py-2.5 rounded-full transition duration-300 hover:bg-white hover:text-[#0B4520] hover:border hover:border-[#0B4520] group uppercase text-sm font-semibold"
+            class="bg-[#0B4520] text-white px-10 py-2.5 rounded-full transition 
+            duration-300 hover:bg-white hover:text-[#0B4520] hover:border hover:border-[#0B4520] 
+            group uppercase text-sm font-semibold
+            wow animate__animated animate__lightSpeedInLeft
+            "
+            data-wow-duration="1s"
+            data-wow-delay="0.5s"
           >
             see more
             <i
@@ -938,38 +1083,77 @@
     <!--- clients section -->
     <section id="clients" class="py-20 px-6 md:px-16 mb-16 rounded-[3rem] bg-[#F6FAF1]">
       <div class="max-w-6xl mx-auto">
-        <h2 class="text-4xl text-center text-[#0B4520] font-bold mb-6 font-['exo_2'] uppercase">
+        <h2 class="text-4xl text-center text-[#0B4520] font-bold mb-6 font-['exo_2'] uppercase
+        wow animate__animated animate__fadeInUp
+        "
+        data-wow-duration="1s"
+        
+        >
           Our Clients
         </h2>
         <div class="clients-slider mt-20">
-          <div class="flex items-center justify-center px-4">
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp"
+          data-wow-duration="1s"
+          data-wow-delay="0.1s"
+          >
             <img src="./images/clients/c-1.png" alt="client-1" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          <div class="flex items-center justify-center px-4
+          wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+          >
             <img src="./images/clients/c-2.png" alt="client-2" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.3s">
             <img src="./images/clients/c-3.png" alt="client-3" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.4s">
             <img src="./images/clients/c-4.png" alt="client-3" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.5s">
             <img src="./images/clients/c-5.png" alt="client-3" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.6s">
             <img src="./images/clients/c-6.png" alt="client-3" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.7s">
             <img src="./images/clients/c-7.png" alt="client-3" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.8s">
             <img src="./images/clients/c-8.png" alt="client-3" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.9s">
             <img src="./images/clients/c-9.png" alt="client-3" />
           </div>
-          <div class="flex items-center justify-center px-4">
+          <div class="flex items-center justify-center px-4 wow animate__animated animate__fadeInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="1s">
             <img src="./images/clients/c-10.png" alt="client-3" />
           </div>
         </div>
@@ -980,13 +1164,24 @@
     <section id="contact" class="py-20 px-6 md:px-16 bg-gray-100">
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-2 gap-12">
-          <div>
+          <div class="
+          wow animate__animated animate__lightSpeedInLeft
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.1s"
+          >
             <h2
-              class="text-4xl text-[#0B4520] font-bold mb-6 font-['exo_2'] uppercase"
+              class="text-4xl text-[#0B4520] font-bold mb-6 font-['exo_2'] uppercase
+              wow animate__animated animate__fadeInUp
+              "
+              data-wow-duration="1s"
             >
               Get In <span class="text-[#47B853]">Touch</span>
             </h2>
-            <p class="text-gray-700 mb-8">
+            <p class="text-gray-700 mb-8 wow animate__animated animate__fadeInUp"
+            data-wow-duration="1s"
+            data-wow-delay="0.3"
+            >
               Have questions about our projects or ready to invest in your
               future home? Our team is here to help.
             </p>
@@ -1071,7 +1266,10 @@
             </div>
           </div>
 
-          <div class="bg-white p-8 rounded-lg shadow-md">
+          <div class="bg-white p-8 rounded-lg shadow-md wow animate__animated animate__lightSpeedInRight"
+          data-wow-duration="1s"
+          data-wow-delay="0.1s"
+          >
             <h3 class="text-xl font-semibold mb-6">Send Us a Message</h3>
             <form>
               <div class="flex flex-row gap-4">
@@ -1144,7 +1342,12 @@
     <footer class="bg-gray-900 text-white py-12 px-6 md:px-16">
       <div class="max-w-6xl mx-auto">
         <div class="grid md:grid-cols-4 gap-8 mb-8">
-          <div>
+          <div class="
+          wow animate__animated animate__zoomIn
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.1s"
+          >
             <a href="#" class="text-xl font-bold mb-4">
               <img class="h-10" src="./images/logo.png" alt="" />
             </a>
@@ -1154,7 +1357,12 @@
             </p>
           </div>
 
-          <div>
+          <div class="
+          wow animate__animated animate__bounceInUp
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.2s"
+          >
             <h4 class="font-semibold mb-4">Quick Links</h4>
             <ul class="space-y-2">
               <li>
@@ -1188,7 +1396,12 @@
             </ul>
           </div>
 
-          <div>
+          <div class="
+          wow animate__animated animate__bounceInDown
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.3s"
+          >
             <h4 class="font-semibold mb-4">Projects</h4>
             <ul class="space-y-2">
               <li>
@@ -1222,7 +1435,12 @@
             </ul>
           </div>
 
-          <div>
+          <div class="
+          wow animate__animated animate__lightSpeedInRight
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.4s"
+          >
             <h4 class="font-semibold mb-4">Connect With Us</h4>
             <div class="flex space-x-4 mb-4">
               <a href="#" class="text-gray-400 hover:text-[#47B853] transition">
@@ -1291,7 +1509,12 @@
         </div>
 
         <div
-          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center"
+          class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between 
+          items-center
+          wow animate__animated animate__zoomIn
+          "
+          data-wow-duration="1s"
+          data-wow-delay="0.5s"
         >
           <p class="text-gray-400 text-sm mb-4 md:mb-0">
             &copy; 2025 RC Property Development Ltd. All rights reserved.
@@ -1341,7 +1564,12 @@
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="./js/app.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        new WOW().init();
+      });
+    </script>
   </body>
 </html>
