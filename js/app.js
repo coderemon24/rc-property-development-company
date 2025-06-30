@@ -163,6 +163,38 @@ $(document).ready(function () {
     ]
   });
   
+  $('.testimonial-slider').slick({
+    dots: false,
+    arrows: false,
+    infinite: true,
+    speed: 5000,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 0,
+    cssEase: 'linear',
+    pauseOnHover: true,
+    pauseOnFocus: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+  
   // scroll behavior
   $('a[href*="#"]').on('click', function (e) {
     e.preventDefault();
