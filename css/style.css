@@ -1,0 +1,63 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url('../images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+.animation {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.animation::before {
+    content: "";
+    position: absolute;
+    width: 100rem;
+    height: 28px;
+    background: #1dae4b;
+    top: -14rem;
+    transform: rotate(-45deg);
+    left: -36rem;
+    transition: all 0.4s linear;
+}
+.animation:hover:before {
+    animation: whyAnimation 0.4s linear alternate forwards;
+    -webkit-animation: whyAnimation 0.4s linear alternate forwards;
+    -moz-animation: whyAnimation 0.4s linear alternate forwards;
+    
+}
+.animation:hover{
+    transform:translateY(-10px);
+}
+
+@keyframes whyAnimation {
+    0% {
+        background: #1dae4b;
+        height: 28px;
+    }
+    50% {
+        background: #0000003b;
+        height: 50rem;
+    }
+    100% {
+        background: black;
+        height: 50px;
+        top: -11rem;
+        left: -2rem;
+    }
+}
