@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
@@ -59,5 +65,25 @@ body {
         height: 50px;
         top: -11rem;
         left: -2rem;
+    }
+}
+
+
+@media(max-width:576px){
+    @keyframes whyAnimation {
+        0% {
+            background: #1dae4b;
+            height: 28px;
+        }
+        50% {
+            background: #0000003b;
+            height: 50rem;
+        }
+        100% {
+            background: black;
+            height: 50px;
+            top: -11rem;
+            left: -3rem;
+        }
     }
 }
